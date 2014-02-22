@@ -1,0 +1,165 @@
+/* Add some margin to the page and set a default font and colour */
+body {
+  margin: 30px;
+  /*font-family: 'Coming Soon', cursive; */
+  font-family: 'Open Sans', sans-serif;
+  background-color:#000000;
+  /*  
+  background-image:url('../pics/pat.png');
+  background-repeat:repeat;
+  */
+}
+
+/* Set the content dimensions */
+#content {
+  width: 800px;
+  padding: 30px 30px 10px 30px;
+  margin: 0 auto;
+  border-style:solid;
+  border-width:1px;
+  background-color:#f4f9f2;
+  border-radius:50px;			  
+}
+
+/*Header*/
+#naslov{	
+	text-align: center;	
+	padding: 10px;
+	text-decoration: none;
+	background-color: #EDE8EB;
+	border-radius: 50px;	
+	box-shadow: 10px 10px 5px #888888;
+}
+
+h1{
+	color:#000000;
+	font-family: 'Verdana', sans-serif;
+	font-size:4em;
+	font-weight: 300;
+	text-shadow: 2px 2px 2px #000;	
+	letter-spacing:3px;
+	line-height: 60%;
+	//cursor:pointer;
+}
+
+h3{
+	font-family: 'Coming Soon', cursive;
+}
+
+#navigacija{
+	text-align: center;	
+	margin-left: 30px;
+	margin-right: 30px;
+	width: 800px;
+	cursor:pointer;
+}
+
+#home{
+	cursor:pointer;
+	font-family: 'Coming Soon', cursive;
+	width: 100px;
+	background-color:#EDE8EB;
+	font-size: 1.2em;
+	text-align: center;	
+	border-radius:25px;
+	margin:0 auto;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+#home:hover { 
+	background-color: #aaa;
+	color: white;
+}
+
+aside{
+	float:right;
+}
+
+.box{
+	text-align: justify;
+	margin-top: 20px;
+	margin-bottom:20px;
+	font-size: 15px;
+	padding: 20px;
+	background-color: #EDE8EB;
+	border-radius: 30px;
+}
+
+.code{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom:20px;
+	font-size: 15px;
+	padding: 20px;
+	background-color: #EDE8EB;
+	border-radius: 30px;
+}
+
+.inline{
+	float: right;
+}
+
+footer{
+	font-size: 0.7em;
+	text-align: center;
+	padding: 10px;
+	border-radius:50px;
+	margin-top: 20px;
+	background-color:#EDE8EB;
+}
+
+/* Menu */
+figure{
+	background-color: #BAB6B8;
+	border-radius:25px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+figure:hover{
+	background-color: #aaa;
+	color: white;
+	border-radius:25px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+figcaption{
+	font-family: 'Coming Soon', cursive;
+	font-size:1em;
+	font-weight: 600;
+	opacity:0.8;
+}			
+
+
+/* Links */
+a:link, a:visited{
+	text-decoration: none;
+	color:#000000;
+}
+
+a:hover{
+	background-color: none;
+	color: black;
+	font-weight: bold;
+}
+
+.blue:hover{
+	background-color: none;
+	color: blue;
+	font-weight: bold;
+}
+
+/* Lists */			
+.list{
+	font-size: 13px;
+	list-style: none;				
+}
+
+ul li {
+	padding: 5px 10px 5px 10px ;
+}
+
+/*Images*/
+img.pics {
+	width: 12em;
+ 	height: 7em;
+}

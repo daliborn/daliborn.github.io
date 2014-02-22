@@ -1,12 +1,248 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html>
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>
-</head>
-<body>
-Hello world!
+	<head>
+		<!-- Page setup -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Dalibor Ninković</title>		
+		
+		
+		<!-- CSS&Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.17.custom.css" rel="Stylesheet" />
+		<link type="text/css" href="css/style.css" rel="Stylesheet" />
+		
+		<!-- Java Script and jquery -->
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.17.custom.min.js"></script>
 
-</body>
-</html> 
+		<script>
+			$(document).ready(function(){
+				$("#playground").hide();
+				$("#about").hide();
+				$("#contact").hide();
+				$("#home").hide();
+				
+				$("#f1").click(function () {
+					$("#contact").hide();
+					$("#f2").css("opacity","0.3");
+					$("#playground").hide();
+					$("#f3").css("opacity","0.3");
+					
+					$(this).css("opacity","0.9");
+
+					$("#about").show();
+					$("#naslov").hide();
+					$("#home").fadeIn("slow");	
+				}); 
+
+				$("#f2").click(function () {
+					$("#about").hide();
+					$("#f1").css("opacity","0.3");
+					$("#contact").hide();
+					$("#f3").css("opacity","0.3");					
+					
+					$(this).css("opacity","0.9");
+					
+					$("#playground").show();
+					$("#naslov").hide();
+					$("#home").fadeIn("slow");	
+				});
+				
+				$("#f3").click(function () {
+					$("#playground").hide();
+					$("#f1").css("opacity","0.3");
+					$("#about").hide();
+					$("#f2").css("opacity","0.3");
+					
+					$(this).css("opacity","0.9");
+					
+					$("#contact").show();
+					$("#naslov").hide();
+					$("#home").fadeIn("slow");
+				});
+				
+			
+				$("#home").click(function () {
+					$("#playground").hide();
+					$("#about").hide();
+					$("#contact").hide();
+					$("#home").hide();
+					$("#naslov").fadeIn("slow");
+					$(".inline").css("opacity","0.9");
+				});
+				
+			 });
+		</script>
+
+	</head>
+	
+	<body>
+
+		
+		<div id="content">
+			<div id="home">
+				/HOME				
+			</div>
+			<div id="naslov">
+				<h1>Dalibor Ninković</h1>
+				<h2>/certified Java programmer/</h2>
+			</div>
+			
+			<div id="navigacija">
+				<nav>
+					<table>
+						<tr>							
+							<td>
+								<figure class="inline" id="f1">
+									<img src="pics/about.png" alt="About" />
+									<figcaption>/SERVICES</figcaption>
+								</figure>
+							</td>
+							<td>
+								<figure class="inline" id="f2">
+									<img src="pics/playground.png" alt="Playground" />
+									<figcaption>/PORTFOLIO</figcaption>
+								</figure>
+							</td>
+							<td>
+								<figure class="inline" id="f3">
+									<img src="pics/contact.png" alt="Contact">
+									<figcaption>/CONTACT</figcaption>
+								</figure>	
+							</td>
+						</tr>
+					</table>
+				</nav>
+				
+			</div>
+			
+			<div id="about">
+			<table border=0>
+			<tr>
+			<td>
+				<div class="box">If you need software development, consulting or education, I'm your man. You can find contact details in contact section.
+				You will work with Computer sciences engineer and <b>certified Java programmer</b> located in Bosnia and Herzegovina (Europe).
+				</div>
+			</td>
+			<td>
+				<aside>
+					<img class="pics" src="pics/cert.jpg" alt="certificate">
+				</aside>
+			</td>
+			</tr>
+			</table>
+			
+			<table border=0 align="center">
+			<tr valign="top">
+			<td>
+				<h3>Backend programming:</h3>
+				<ul class="list">
+					<li>Software architecture using:
+						<ul>
+							 <li>Design patterns</li>
+							 <li>UML diagrams</li>
+							 <li>Object Oriented Programming</li>
+						</ul>
+					</li>
+					<li>Java Enterprise aplications using:
+						<ul>
+							<li>Spring, Spring MVC</li>
+							<li>SQL (Postgre, Oracle, MySql)</li>
+							<li>ORM framework: Hibernate</li>
+						</ul>
+					</li>
+
+					<li>Various tools and technologies
+						<ul>
+							 <li>Maven, Ant, Eclipse, SVN, Git</li>
+							 <li>XML services: Rest and Soap</li>
+							 <li>Play framework</li>
+						</ul>
+					</li>
+				</ul>
+			</td>
+			<td>
+				<h3>Frontend development:</h3>
+				<ul class="list">
+					<li>User interface design based on Gestalt principles</li>
+					<li>Web design using HTML5 & CSS3 including:
+						<ul>
+							 <li>JavaScript</li>
+							 <li>JS libraries like jQuery for web 2.0 apps</li>
+						</ul>
+					</li>
+			</td>
+			</tr>
+			</table>
+			</div>
+			
+			<div id="playground">
+				<div class="code">
+					I store my code on <a href="http://code.google.com/u/daliborn/">GoogleCode</a> and <a href="https://github.com/daliborn">GitHub</a>.
+					For production, I like to use google app engine and heroku.
+				</div>
+				<div class="list">
+				<table border=0 align="center">
+				<tr valign="top">
+				<td style="width: 50%">
+				<h3>Company projects:</h3>
+				<ul align="justify">
+					<li>Location system (Java EE, SOAP) application for <a href="http://www.navteq.com/">NAVTEQ</a>/<a href="http://www.nokia.com/">Nokia</a> as a contractor - <a href="http://www.atlantbh.com/">AtlantBH</a>. Worked as a software engineer on project for 16 months</li>
+					<li>Java web CMS for CodeCentric</li>
+					<li>Use of IT for ecology, manager position at NGO "Helios"</li>
+					<li>Voluntary advisor work for: World Bank for youth employment</li>
+				</ul>
+				</td>
+				<td style="width: 50%">				
+				<h3>Freelancing projects:</h3>
+				<aside>
+					
+				</aside>
+				<ul>
+					<li>Logo design for fashion company: "Istok couture"</li>
+					<li><a href="http://daliborn.appspot.com/">Gis App</a> - GIS app based on google app engine</li>
+					<li><a href="http://blue2blab.appspot.com/">blueblab</a> - Mobile HTML5 application</li>
+					<li><a href="http://vrhcigare.com/">vrh cigare</a> - shop for Cuban cigar's</li>
+					<li>Swing accounting app - freelance activity</li>
+				</ul>
+				</td>
+				</tr>
+				<tr valign="top">
+				<td align="center" style="width: 50%">
+					<img src="pics/nokia.png"/><img src="pics/navteq.png"/>
+					<img src="pics/abh_logo_main.png"/>
+				</td>
+				<td align="center" style="width: 50%">
+					<img class="pics" src="pics/logo.jpg" alt="Istok couture logo" />
+				</td>
+				</table>
+				</div>
+
+				
+			</div>			
+			
+			<div id="contact">
+				<div class="box">
+				Whether you are potential client, or you are looking for additional information, don't hesitate to contact me via:
+				<ul>
+					<li><a href="http://ba.linkedin.com/in/daliborn"><span class="blue">Linkedin</span></a></li>
+					<li>E-mail: <b>daliborn[at]gmail[dot]com</b></li>
+					<li>Skype: <b>daliborn1</b></li>
+					<li><a href="http://www.facebook.com/daliborn"><span class="blue">Facebook</span></li>
+				</ul>
+				</div>
+				
+				<h3>Social networks:</h3>				
+				<p>You can also read my <a href="http://javafazan.tumblr.com/">tumblr blog about java</a>.
+				<p><a href="http://pinterest.com/daliborn/">Pinterest</a>, <a href="http://twitter.com/daliborn">Twitter</a> and <a href="http://foursquare.com/user/11155275">Foursquare</a> are also my favorites. 
+				</p>
+				
+			</div>
+			
+			<footer>
+				Optimized for html5&css3 browsers // &copy; 2012 <a href="http://daliborn.info">Dalibor Ninković</a>
+			</footer>
+		</div>
+	</body>
+</html>
