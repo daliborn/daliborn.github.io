@@ -1,3 +1,11 @@
+/* Add some margin to the page and set a default font and colour */
+body {
+  margin: 30px;
+  /*font-family: 'Coming Soon', cursive; */
+  font-family: 'Open Sans', sans-serif;
+
+}
+
 /*Header*/
 #naslov{
 	text-align: center;
