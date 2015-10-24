@@ -1,94 +1,43 @@
 ﻿<!DOCTYPE HTML>
-<html>
-	<head>
-		<!-- Page setup -->
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Dalibor Ninković</title>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dalibor Ninković</title>
+
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 
 		<!-- CSS&Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-		<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.17.custom.css" rel="Stylesheet" />
 		<link type="text/css" href="css/style.css" rel="Stylesheet" />
-
-		<!-- Java Script and jquery -->
-		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-		<script type="text/javascript" src="js/jquery-ui-1.8.17.custom.min.js"></script>
-
-		<script>
-			$(document).ready(function(){
-				$("#playground").hide();
-				$("#about").hide();
-				$("#contact").hide();
-				$("#home").hide();
-
-				$("#f1").click(function () {
-					$("#contact").hide();
-					$("#f2").css("opacity","0.3");
-					$("#playground").hide();
-					$("#f3").css("opacity","0.3");
-
-					$(this).css("opacity","0.9");
-
-					$("#about").show();
-					$("#naslov").hide();
-					$("#home").fadeIn("slow");
-				});
-
-				$("#f2").click(function () {
-					$("#about").hide();
-					$("#f1").css("opacity","0.3");
-					$("#contact").hide();
-					$("#f3").css("opacity","0.3");
-
-					$(this).css("opacity","0.9");
-
-					$("#playground").show();
-					$("#naslov").hide();
-					$("#home").fadeIn("slow");
-				});
-
-				$("#f3").click(function () {
-					$("#playground").hide();
-					$("#f1").css("opacity","0.3");
-					$("#about").hide();
-					$("#f2").css("opacity","0.3");
-
-					$(this).css("opacity","0.9");
-
-					$("#contact").show();
-					$("#naslov").hide();
-					$("#home").fadeIn("slow");
-				});
-
-
-				$("#home").click(function () {
-					$("#playground").hide();
-					$("#about").hide();
-					$("#contact").hide();
-					$("#home").hide();
-					$("#naslov").fadeIn("slow");
-					$(".inline").css("opacity","0.9");
-				});
-
-			 });
-		</script>
 
 	</head>
 
 	<body>
+		<div class="container">
 
-
-		<div id="content">
-			<div id="home">
+			<div class="row" id="home">
 				/HOME
 			</div>
-			<div id="naslov">
-				<h1>Dalibor Ninković</h1>
-				<h2>/freelancing developer/</h2>
-			</div>
 
+			<div class="row">
+				<div id="naslov">
+					<h1>Dalio</h1>
+					<h2>/programming agency/</h2>
+				</div>
+			</div>
+			
 			<div id="navigacija">
 				<nav>
 					<table>
@@ -119,8 +68,8 @@
 
 			<div id="about">
 
-				<div class="box">If you need software development, consulting or education, I'm your man. You can find contact details in contact section.
-				You will work with Computer sciences engineer and <b>certified Java programmer</b> located in Europe.
+				<div class="box">We do software development and consulting.<br>
+				You will work with Computer sciences engineer and certified Java programmer located in Europe.
 				</div>
 
 
@@ -170,8 +119,8 @@
 
 			<div id="playground">
 				<div class="code">
-					I store my code on <a href="http://code.google.com/u/daliborn/">GoogleCode</a> and <a href="https://github.com/daliborn">GitHub</a>.
-					For production, I like to use google app engine and heroku.
+					Check out code on <a href="https://github.com/daliborn">GitHub</a>.<br>
+					Prefered cloud solution is AWS and Dockeras container.
 				</div>
 				<div class="list">
 				<table border=0 align="center">
@@ -194,19 +143,11 @@
 					<li>Logo design for fashion company: "Istok couture"</li>
 					<li><a href="http://daliborn.appspot.com/">Gis App</a> - GIS app based on google app engine</li>
 					<li><a href="http://blue2blab.appspot.com/">blueblab</a> - Mobile HTML5 application</li>
-					<li><a href="http://vrhcigare.com/">vrh cigare</a> - shop for Cuban cigar's</li>
+					<li>vrh cigare - shop for Cuban cigar's</li>
 					<li>Swing accounting app - freelance activity</li>
 				</ul>
 				</td>
 				</tr>
-				<tr valign="top">
-				<td align="center" style="width: 50%">
-					<img src="pics/nokia.png"/><img src="pics/navteq.png"/>
-					<img src="pics/abh_logo_main.png"/>
-				</td>
-				<td align="center" style="width: 50%">
-					<img class="pics" src="pics/logo.jpg" alt="Istok couture logo" />
-				</td>
 				</table>
 				</div>
 
@@ -220,7 +161,6 @@
 					<li><a href="http://ba.linkedin.com/in/daliborn"><span class="blue">Linkedin</span></a></li>
 					<li>E-mail: <b>daliborn[at]gmail[dot]com</b></li>
 					<li>Skype: <b>daliborn1</b></li>
-					<li><a href="http://www.facebook.com/daliborn"><span class="blue">Facebook</span></li>
 				</ul>
 				</div>
 
@@ -232,5 +172,11 @@
 				Optimized for html5&css3 browsers // &copy; 2012 <a href="http://daliborn.info">Dalibor Ninković</a>
 			</footer>
 		</div>
+
+		    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+		<script src="js/customUI.js"></script>
 	</body>
 </html>
