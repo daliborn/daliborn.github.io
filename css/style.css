@@ -52,16 +52,6 @@ aside{
 }
 
 .box{
-	text-align: justify;
-	margin-top: 20px;
-	margin-bottom:20px;
-	font-size: 15px;
-	padding: 20px;
-	background-color: #EDE8EB;
-	border-radius: 30px;
-}
-
-.code{
 	text-align: center;
 	margin-top: 20px;
 	margin-bottom:20px;
